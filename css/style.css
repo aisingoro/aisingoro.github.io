@@ -153,6 +153,7 @@ header {
     margin-top: 20rem;
     line-height: 5rem;
     padding-left: 10%;
+    position: relative;
 }
 
 .bao {
@@ -165,6 +166,9 @@ header {
     animation-fill-mode: forwards;
     float: right;
     padding-right: 35%;
+    position: absolute;
+    top: 5rem;
+    left: 9rem;
 }
 
 .dian {
