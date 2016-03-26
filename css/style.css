@@ -1,3 +1,222 @@
-.b {
-    font-size: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrap {
+    width: 200%;
+    height: 100%;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+    background: url("../../pic/picbg.png") no-repeat;
+    background-size: cover;
+    /*display: none;*/
+    float: right;
+}
+
+.box article {
+    padding-top: 6.5rem;
+}
+
+.box article section {
+    width: 40%;
+    height: 7rem;
+    float: left;
+    margin: 5%;
+    border-radius: 10px;
+}
+
+.questionBank {
+    border: 1px dashed #84AC45;
+    background: url("../../pic/pic_nav01.png") no-repeat center .5rem;
+}
+
+.questionRandom {
+    border: 1px dashed #ED6247;
+    background: url("../../pic/pic_nav02.png") no-repeat center .5rem;
+}
+
+.questionCollect {
+    border: 1px dashed #3F8EAB;
+    background: url("../../pic/pic_nav03.png") no-repeat center .5rem;
+}
+
+.More {
+    border: 1px dashed #FBB150;
+    background: url("../../pic/pic_nav04.png") no-repeat center .5rem;
+}
+
+.questionBank a,
+.questionRandom a,
+.questionCollect a,
+.More a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    background: -webkit-gradient(linear, 45% 10%, 100% 100%, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.15)));
+    line-height: 3rem;
+    display: -webkit-box;
+}
+
+.userInfo {
+    display: block;
+    width: 60%;
+    height: 3rem;
+    display: -webkit-box;
+}
+
+.userPic {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    position: absolute;
+    left: .5rem;
+    border-radius: 25px;
+}
+
+.userName {
+    position: absolute;
+    left: 3.8rem;
+    color: #827F7F;
+    font-weight: 700;
+}
+
+.box header {
+    position: relative;
+}
+
+.star {
+    color: #FFBE00;
+    position: absolute;
+    bottom: .9rem;
+    right: 4rem;
+}
+
+.starNum {
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+}
+
+.box1 {
+    width: 50%;
+    height: 100%;
+    background: white;
+    float: left;
+    background: url(../../pic/pic_welcome.jpeg) no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #AACEEF;
+    font-weight: bold;
+}
+
+.box1 h1 {
+    width: 100%;
+    font-size: 3rem;
+    background: #FD9A9A;
+    height: 7rem;
+    margin-left: -15rem;
+    animation-name: nth1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    margin-top: 20rem;
+    line-height: 7rem;
+    padding-left: 22%;
+}
+
+.bao {
+    font-size: 4rem;
+    display: block;
+    color: #F3F318;
+    margin-top: -8rem;
+    animation-name: nth2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    float: right;
+    padding-right: 35%;
+}
+
+.dian {
+    font-size: 3rem;
+    display: block;
+    color: #AACEEF;
+    animation-name: nth3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 6rem;
+}
+
+@-webkit-keyframes nth1 {
+    100% {
+        transform: translate(15rem);
+    }
+}
+
+@-webkit-keyframes nth2 {
+    /* 0% {
+     transform: translateY(0);
+ }
+ 
+ 50% {
+     transform: translateY(25rem);
+ }*/
+    60% {
+        transform: rotate(30deg);
+    }
+    70% {
+        transform: rotate(-30deg);
+    }
+    80% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+@-webkit-keyframes nth3 {
+    100% {
+        transform: translateX(4rem);
+    }
+}
+
+@-webkit-keyframes nth {
+    100% {
+        transform: translateY(25rem);
+    }
 }
